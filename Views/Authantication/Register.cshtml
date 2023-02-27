@@ -1,0 +1,232 @@
+﻿@model CI_Platform_three_tier.DataModels.DataModels.User
+}
+@{
+    ViewData["Title"] = "Register Page";
+    Layout = null;
+    var modelStateMessage = ViewData["ModelState"];
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/Authantication.css" />
+</head>
+
+<body>
+    <div class="container-fluid row main">
+        <div class="row vh-100 gx-0">
+            <!-- Carousel -->
+            <div class="img-slider col-lg-8 gx-0">
+                <div id="demo" class="carousel h-100 slide" data-bs-ride="carousel">
+                    <!-- Indicators/dots -->
+                    <div class="carousel-indicators">
+                        <button type="button"
+                                data-bs-target="#demo"
+                                data-bs-slide-to="0"
+                                class="active"></button>
+                        <button type="button"
+                                data-bs-target="#demo"
+                                data-bs-slide-to="1"></button>
+                        <button type="button"
+                                data-bs-target="#demo"
+                                data-bs-slide-to="2"></button>
+                        <button type="button"
+                                data-bs-target="#demo"
+                                data-bs-slide-to="3"></button>
+                    </div>
+
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner h-100">
+                        <div class="carousel-item active h-100">
+                            <img src="/Assets/Grow-Trees-On-the-path-to-environment-sustainability-login.png"
+                                 alt="Los Angeles"
+                                 class="slideimg" />
+                            <div class="carousel-caption">
+                                <h3 class="img-heading">
+                                    Sed ut perspiciatis unde omnis iste natus voluptatem.
+                                </h3>
+                                <p class="img-discription">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit
+                                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                    occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim id est laborum.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item h-100">
+                            <img src="/Assets/Grow-Trees-On-the-path-to-environment-sustainability-login.png"
+                                 alt="Chicago"
+                                 class="slideimg" />
+                            <div class="carousel-caption">
+                                <h3 class="img-heading">
+                                    Sed ut perspiciatis unde omnis iste natus voluptatem.
+                                </h3>
+                                <p class="img-discription">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit
+                                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                    occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim id est laborum.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item h-100">
+                            <img src="/Assets/Grow-Trees-On-the-path-to-environment-sustainability-login.png"
+                                 alt="New York"
+                                 class="slideimg" />
+                            <div class="carousel-caption">
+                                <h3 class="img-heading">
+                                    Sed ut perspiciatis unde omnis iste natus voluptatem.
+                                </h3>
+                                <p class="img-discription">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit
+                                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                    occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim id est laborum.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item h-100">
+                            <img src="/Assets/Grow-Trees-On-the-path-to-environment-sustainability-login.png"
+                                 alt="New York"
+                                 class="slideimg" />
+                            <div class="carousel-caption">
+                                <h3 class="img-heading">
+                                    Sed ut perspiciatis unde omnis iste natus voluptatem.
+                                </h3>
+                                <p class="img-discription">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit
+                                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                    occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim id est laborum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls/icons -->
+                    <button class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#demo"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#demo"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col mt-5 loginpage">
+                <div class="text-center ">
+                    <img class="mw-100" src="/Assets/logo.png" alt="logo" />
+                </div>
+                <div class="">
+                    <form asp-route="CreateUserPost">
+                        <div class="mb-3 form-input">
+                            <label for="fname" class="form-label">First Name</label>
+                            <input type="text"
+                                   class="form-control"
+                                   asp-for="FirstName"
+                                   id="fname"
+                                   placeholder="name"
+                                   required />
+                        </div>
+                        <div class="mb-3 form-input">
+                            <label for="lname" class="form-label">Last Name</label>
+                            <input type="text"
+                                   class="form-control"
+                                   asp-for="LastName"
+                                   id="lname"
+                                   placeholder="surname"
+                                   required />
+                        </div>
+                        <div class="mb-3 form-input">
+                            <label for="mobno" class="form-label">Phone Number</label>
+                            <input type="tel"
+                                   class="form-control"
+                                   asp-for="PhoneNumber"
+                                   id="mobno"
+                                   placeholder="12345"
+                                   required />
+                        </div>
+                        <div class="mb-3 form-input">
+                            <label for="emailId" class="form-label">Email address</label>
+                            <input type="email"
+                                   class="form-control"
+                                   asp-for="Email"
+                                   id="emailId"
+                                   placeholder="name@example.com"
+                                   required />
+                        </div>
+                        <div class="mb-3 form-input">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password"
+                                   asp-for="Password"
+                                   class="form-control"
+                                   id="password"
+                                   placeholder="****"
+                                   required />
+                        </div>
+                        <div class="mb-3 form-input">
+                            <label for="password" class="form-label">Confrim Password</label>
+                            <input type="password"
+                                   class="form-control"
+                                   id="password"
+                                   placeholder="****"
+                                   required />
+                        </div>
+                        <div class="form-input">
+                            <button type="submit" class="login-btn mb-4">Register</button>
+                        </div>
+                    </form>
+
+                    <!-- </form> -->
+
+                    <div class="text-center mb-2">
+                        <a class="lostpass" asp-action="ForgotPassword" asp-controller="Login">Lost your Password?</a>
+                    </div>
+                    <div class="text-center mb-2">
+                        <span>Already registered?</span><a style="text-decoration: none" asp-action="Login" asp-controller="Login">Login now</a>
+                    </div>
+                </div>
+                <div class="privacy-policy text-center">
+                    <a class="privacy" asp-action="Privacy" asp-controller="Home">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="/js/bootstrap.bundle.min.js"></script>
+    <script >
+        $(document).ready(finction(){
+            if("@modelStateMessage" != ""){
+                alert("@modelStateMessage");
+            }
+        })
+    </script>
+</html>

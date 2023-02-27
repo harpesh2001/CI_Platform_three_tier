@@ -1,0 +1,1217 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Home Page
+    </title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/landingPage.css" />
+    <script src="~/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <nav class="navbar navbar-expand-md navbar-light bg-light justify-content-around shadow p-0 pb-0 pt-0 bg-body">
+        <div class="container-fluid">
+            <div class="m-0 w-50">
+                <a class="navbar-brand">
+                    <img src="~/Assets/search.png" alt="logo" class="mw-100" />
+                    <input type="text" placeholder="Search hear..." class="border-0 bg-transparent mw-100" />
+                </a>
+            </div>
+
+
+
+            <div class="d-flex justify-content-end">
+                <div class="collapse navbar-collapse offcanvas d-flex offcanvas-end " tabindex="-1"
+                     id="offcanvasExample1" aria-labelledby="offcanvasExampleLabel1">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                    </div>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <button class="nav-link dropdown-toggle border-0 bg-transparent p-3 text-dark"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                Country
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li class="mx-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input checkbox" type="checkbox"
+                                               value="country 1" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            country 1
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="mx-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input checkbox" type="checkbox"
+                                               value="country 2" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            country 2
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="mx-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input checkbox" type="checkbox"
+                                               value="country 3" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            country 3
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <button class="nav-link dropdown-toggle border-0 bg-transparent p-3 text-dark"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                City
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li class="mx-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input checkbox" type="checkbox"
+                                               value="City 1" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            City 1
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="mx-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input checkbox" type="checkbox"
+                                               value="City 2" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            City 2
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="mx-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input checkbox" type="checkbox"
+                                               value="City 3" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            City 3
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="mx-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input checkbox" type="checkbox"
+                                               value="City 4" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            City 4
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <button class="nav-link dropdown-toggle border-0 bg-transparent p-3 text-dark"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                Theme
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li class="mx-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input checkbox" type="checkbox"
+                                               value="Theme 1" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Theme 1
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="mx-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input checkbox" type="checkbox"
+                                               value="Theme 2" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Theme 2
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="mx-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input checkbox" type="checkbox"
+                                               value="Theme 3" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Theme 3
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="mx-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input checkbox" type="checkbox"
+                                               value="Theme 4" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Theme 4
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="mx-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input checkbox" type="checkbox"
+                                               value="Theme 5" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Theme 5
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <button class="nav-link dropdown-toggle border-0 bg-transparent p-3 text-dark"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                Skills
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <li class="mx-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input checkbox" type="checkbox"
+                                               value="Skill 1" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Skill 1
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="mx-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input checkbox" type="checkbox"
+                                               value="Skill 2" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Skill 2
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="mx-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input checkbox" type="checkbox"
+                                               value="Skill 3" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Skill 3
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="mx-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input checkbox" type="checkbox"
+                                               value="Skill 4" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Skill 4
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="mx-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input checkbox" type="checkbox"
+                                               value="Skill 5" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Skill 5
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="btn btn-primary navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample1 " aria-controls="offcanvasExample1 " aria-expanded="false"
+                    style="height: 50px">
+                <span class="border-0"><img src="~/Assets/filter.png" alt="filter" /></span>
+            </button>
+        </div>
+    </nav>
+
+
+
+
+
+
+    <!-- Fliter Points------------------------------------------------------------------------------------->
+    <div class="container-fluid mt-2">
+        <div class="d-flex filters-section flex-wrap mt-2"></div>
+    </div>
+
+</head>
+
+<body>
+
+    <div class="container-fluid g-0">
+
+
+
+       
+        <!-- Mission Header and list grid View ------------------------------------------------------------------>
+        <div class="container-fluid d-flex justify-content-between mt-3">
+            <div class="mt-2">
+                <span>
+                    <h3>Explore : <b>72 Mission</b></h3>
+                </span>
+            </div>
+            <div class="d-flex justify-content-between">
+                <div class="dropdown mx-2">
+                    <button class="btn bg-transparent border dropdown-toggle"
+                            type="button"
+                            id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                        Sort by
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">country</a></li>
+                        <li><a class="dropdown-item" href="#">city</a></li>
+                        <li><a class="dropdown-item" href="#">Organization</a></li>
+                    </ul>
+                </div>
+                <div class="d-flex justify-content-between mt-1">
+                    <a class="border-0 text-decoration-none mx-2"
+                       onclick="opengrid()"
+                       id="chumantar">
+                        <img src="~/Assets/grid.png" alt="" srcset="" />
+                    </a>
+                    <a class="border-0 text-decoration-none"
+                       onclick="openlist()"
+                       id="chumantar">
+                        <img src="~/Assets/list.png" alt="" srcset="" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid mt-4 gridview" id="gridview">
+            <div class="row row-cols-1 row-cols-md-3 g-2 m-3">
+                <div class="col">
+                    <div class="card">
+                        <!-- ~/Assets -------------------------------------------------------------------------------->
+                        <div class="mission-image">
+                            <img src="~/Assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png"
+                                 alt=""
+                                 class="w-100" />
+                            <div class="pin">
+                                <img src="~/Assets/pin.png" alt="" class="" />&nbsp; Toronto
+                            </div>
+                            <div class="favourite">
+                                <img src="~/Assets/heart.png" alt="" class="mw-50 mh-50" />
+                            </div>
+                            <div class="adduser">
+                                <img src="~/Assets/user.png" alt="" class="mw-50 mh-50" />
+                            </div>
+                        </div>
+                        <!-- Card Body ---------------------------------------------------------------------------->
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center">
+                                <p class="card-title position-absolute">Tree Plantation</p>
+                            </div>
+                            <div class="m-2">
+                                <h4 class="card-text">
+                                    Grow Trees - On the path To enviroment sustainability
+                                </h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Nobis corrupti nesciunt mollitia voluptate minus harum,
+                                    sequi fugiat quis excepturi ipsum animi quod reiciendis
+                                    voluptatibus aperiam alias unde, esse possimus asperiores?
+                                </p>
+                                <div class="d-flex justify-content-between">
+                                    <p>Tree Canada</p>
+                                    <div>
+                                        <div class="d-flex">
+                                            <img src="~/Assets/selected-star.png"
+                                                 alt=""
+                                                 class="mw-100" /><img src="~/Assets/selected-star.png" alt="" /><img src="~/Assets/selected-star.png"
+                                                                                                                      alt="" /><img src="~/Assets/selected-star.png" alt="" /><img src="~/Assets/selected-star.png"
+                                                                                                                                                                                   alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="d-flex justify-content-center">
+                                <p class="DateTime-title">From date to until date</p>
+                            </div>
+                            <div></div>
+                            <hr />
+                            <div class="d-flex justify-content-center">
+                                <a class="btn border text-danger bg-gradient rounded-pill px-4">
+                                    Apply <img src="~/Assets/right-arrow.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <!-- ~/Assets -------------------------------------------------------------------------------->
+                        <div class="mission-image">
+                            <img src="~/Assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png"
+                                 alt=""
+                                 class="w-100" />
+                            <div class="pin">
+                                <img src="~/Assets/pin.png" alt="" class="" />&nbsp; Toronto
+                            </div>
+                            <div class="favourite">
+                                <img src="~/Assets/heart.png" alt="" class="mw-50 mh-50" />
+                            </div>
+                            <div class="adduser">
+                                <img src="~/Assets/user.png" alt="" class="mw-50 mh-50" />
+                            </div>
+                        </div>
+                        <!-- Card Body ---------------------------------------------------------------------------->
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center">
+                                <p class="card-title position-absolute">Tree Plantation</p>
+                            </div>
+                            <div class="m-2">
+                                <h4 class="card-text">
+                                    Grow Trees - On the path To enviroment sustainability
+                                </h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Nobis corrupti nesciunt mollitia voluptate minus harum,
+                                    sequi fugiat quis excepturi ipsum animi quod reiciendis
+                                    voluptatibus aperiam alias unde, esse possimus asperiores?
+                                </p>
+                                <div class="d-flex justify-content-between">
+                                    <p>Tree Canada</p>
+                                    <div>
+                                        <div class="d-flex">
+                                            <img src="~/Assets/selected-star.png"
+                                                 alt=""
+                                                 class="mw-100" /><img src="~/Assets/selected-star.png" alt="" /><img src="~/Assets/selected-star.png"
+                                                                                                                      alt="" /><img src="~/Assets/selected-star.png" alt="" /><img src="~/Assets/selected-star.png"
+                                                                                                                                                                                   alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="d-flex justify-content-center">
+                                <p class="DateTime-title">From date to until date</p>
+                            </div>
+                            <div></div>
+                            <hr />
+                            <div class="d-flex justify-content-center">
+                                <a class="btn border text-danger bg-gradient rounded-pill px-4">
+                                    Apply <img src="~/Assets/right-arrow.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <!-- ~/Assets -------------------------------------------------------------------------------->
+                        <div class="mission-image">
+                            <img src="~/Assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png"
+                                 alt=""
+                                 class="w-100" />
+                            <div class="pin">
+                                <img src="~/Assets/pin.png" alt="" class="" />&nbsp; Toronto
+                            </div>
+                            <div class="favourite">
+                                <img src="~/Assets/heart.png" alt="" class="mw-50 mh-50" />
+                            </div>
+                            <div class="adduser">
+                                <img src="~/Assets/user.png" alt="" class="mw-50 mh-50" />
+                            </div>
+                        </div>
+                        <!-- Card Body ---------------------------------------------------------------------------->
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center">
+                                <p class="card-title position-absolute">Tree Plantation</p>
+                            </div>
+                            <div class="m-2">
+                                <h4 class="card-text">
+                                    Grow Trees - On the path To enviroment sustainability
+                                </h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Nobis corrupti nesciunt mollitia voluptate minus harum,
+                                    sequi fugiat quis excepturi ipsum animi quod reiciendis
+                                    voluptatibus aperiam alias unde, esse possimus asperiores?
+                                </p>
+                                <div class="d-flex justify-content-between">
+                                    <p>Tree Canada</p>
+                                    <div>
+                                        <div class="d-flex">
+                                            <img src="~/Assets/selected-star.png"
+                                                 alt=""
+                                                 class="mw-100" /><img src="~/Assets/selected-star.png" alt="" /><img src="~/Assets/selected-star.png"
+                                                                                                                      alt="" /><img src="~/Assets/selected-star.png" alt="" /><img src="~/Assets/selected-star.png"
+                                                                                                                                                                                   alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="d-flex justify-content-center">
+                                <p class="DateTime-title">From date to until date</p>
+                            </div>
+                            <div></div>
+                            <hr />
+                            <div class="d-flex justify-content-center">
+                                <a class="btn border text-danger bg-gradient rounded-pill px-4">
+                                    Apply <img src="~/Assets/right-arrow.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <!-- ~/Assets -------------------------------------------------------------------------------->
+                        <div class="mission-image">
+                            <img src="~/Assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png"
+                                 alt=""
+                                 class="w-100" />
+                            <div class="pin">
+                                <img src="~/Assets/pin.png" alt="" class="" />&nbsp; Toronto
+                            </div>
+                            <div class="favourite">
+                                <img src="~/Assets/heart.png" alt="" class="mw-50 mh-50" />
+                            </div>
+                            <div class="adduser">
+                                <img src="~/Assets/user.png" alt="" class="mw-50 mh-50" />
+                            </div>
+                        </div>
+                        <!-- Card Body ---------------------------------------------------------------------------->
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center">
+                                <p class="card-title position-absolute">Tree Plantation</p>
+                            </div>
+                            <div class="m-2">
+                                <h4 class="card-text">
+                                    Grow Trees - On the path To enviroment sustainability
+                                </h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Nobis corrupti nesciunt mollitia voluptate minus harum,
+                                    sequi fugiat quis excepturi ipsum animi quod reiciendis
+                                    voluptatibus aperiam alias unde, esse possimus asperiores?
+                                </p>
+                                <div class="d-flex justify-content-between">
+                                    <p>Tree Canada</p>
+                                    <div>
+                                        <div class="d-flex">
+                                            <img src="~/Assets/selected-star.png"
+                                                 alt=""
+                                                 class="mw-100" /><img src="~/Assets/selected-star.png" alt="" /><img src="~/Assets/selected-star.png"
+                                                                                                                      alt="" /><img src="~/Assets/selected-star.png" alt="" /><img src="~/Assets/selected-star.png"
+                                                                                                                                                                                   alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="d-flex justify-content-center">
+                                <p class="DateTime-title">From date to until date</p>
+                            </div>
+                            <div></div>
+                            <hr />
+                            <div class="d-flex justify-content-center">
+                                <a class="btn border text-danger bg-gradient rounded-pill px-4">
+                                    Apply <img src="~/Assets/right-arrow.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <!-- ~/Assets -------------------------------------------------------------------------------->
+                        <div class="mission-image">
+                            <img src="~/Assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png"
+                                 alt=""
+                                 class="w-100" />
+                            <div class="pin">
+                                <img src="~/Assets/pin.png" alt="" class="" />&nbsp; Toronto
+                            </div>
+                            <div class="favourite">
+                                <img src="~/Assets/heart.png" alt="" class="mw-50 mh-50" />
+                            </div>
+                            <div class="adduser">
+                                <img src="~/Assets/user.png" alt="" class="mw-50 mh-50" />
+                            </div>
+                        </div>
+                        <!-- Card Body ---------------------------------------------------------------------------->
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center">
+                                <p class="card-title position-absolute">Tree Plantation</p>
+                            </div>
+                            <div class="m-2">
+                                <h4 class="card-text">
+                                    Grow Trees - On the path To enviroment sustainability
+                                </h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Nobis corrupti nesciunt mollitia voluptate minus harum,
+                                    sequi fugiat quis excepturi ipsum animi quod reiciendis
+                                    voluptatibus aperiam alias unde, esse possimus asperiores?
+                                </p>
+                                <div class="d-flex justify-content-between">
+                                    <p>Tree Canada</p>
+                                    <div>
+                                        <div class="d-flex">
+                                            <img src="~/Assets/selected-star.png"
+                                                 alt=""
+                                                 class="mw-100" /><img src="~/Assets/selected-star.png" alt="" /><img src="~/Assets/selected-star.png"
+                                                                                                                      alt="" /><img src="~/Assets/selected-star.png" alt="" /><img src="~/Assets/selected-star.png"
+                                                                                                                                                                                   alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="d-flex justify-content-center">
+                                <p class="DateTime-title">From date to until date</p>
+                            </div>
+                            <div></div>
+                            <hr />
+                            <div class="d-flex justify-content-center">
+                                <a class="btn border text-danger bg-gradient rounded-pill px-4">
+                                    Apply <img src="~/Assets/right-arrow.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <!-- image -------------------------------------------------------------------------------->
+                        <div class="mission-image">
+                            <img src="~/Assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png"
+                                 alt=""
+                                 class="w-100" />
+                            <div class="pin">
+                                <img src="~/Assets/pin.png" alt="" class="" />&nbsp; Toronto
+                            </div>
+                            <div class="favourite">
+                                <img src="~/Assets/heart.png" alt="" class="mw-50 mh-50" />
+                            </div>
+                            <div class="adduser">
+                                <img src="~/Assets/user.png" alt="" class="mw-50 mh-50" />
+                            </div>
+                        </div>
+                        <!-- Card Body ---------------------------------------------------------------------------->
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center">
+                                <p class="card-title position-absolute">Tree Plantation</p>
+                            </div>
+                            <div class="m-2">
+                                <h4 class="card-text">
+                                    Grow Trees - On the path To enviroment sustainability
+                                </h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Nobis corrupti nesciunt mollitia voluptate minus harum,
+                                    sequi fugiat quis excepturi ipsum animi quod reiciendis
+                                    voluptatibus aperiam alias unde, esse possimus asperiores?
+                                </p>
+                                <div class="d-flex justify-content-between">
+                                    <p>Tree Canada</p>
+                                    <div>
+                                        <div class="d-flex">
+                                            <img src="~/Assets/selected-star.png"
+                                                 alt=""
+                                                 class="mw-100" /><img src="~/Assets/selected-star.png" alt="" /><img src="~/Assets/selected-star.png"
+                                                                                                                      alt="" /><img src="~/Assets/selected-star.png" alt="" /><img src="~/Assets/selected-star.png"
+                                                                                                                                                                                   alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="d-flex justify-content-center">
+                                <p class="DateTime-title">From date to until date</p>
+                            </div>
+                            <div></div>
+                            <hr />
+                            <div class="d-flex justify-content-center">
+                                <a class="btn border text-danger bg-gradient rounded-pill px-4">
+                                    Apply <img src="~/Assets/right-arrow.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mt-4 ps-4 pe-4 listview"
+             id="listview"
+             style="display: none">
+            <div class="card mb-4">
+                <div class="row g-0">
+                    <div class="col-md-3">
+                        <div class="mission-image h-100">
+                            <img src="~/Assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png"
+                                 class="img-fluid h-100 w-100"
+                                 alt="..." />
+                            <div class="pin">
+                                <img src="~/Assets/pin.png" alt="" class="" />&nbsp; Toronto
+                            </div>
+                            <div class="favourite">
+                                <img src="~/Assets/heart.png" alt="" class="mw-50 mh-50" />
+                            </div>
+                            <div class="adduser">
+                                <img src="~/Assets/user.png" alt="" class="mw-50 mh-50" />
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <p class="card-title position-absolute" id="list-card">
+                                    Tree Plantation
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <div class="d-flex text-muted">
+                                        <div>
+                                            <img src="~/Assets/pin1.png"
+                                                 alt=""
+                                                 class="px-2 pb-0" />Toranto
+                                        </div>
+                                        <div>
+                                            <img src="~/Assets/web.png"
+                                                 alt=""
+                                                 class="px-2 pb-0" />Enviromental
+                                        </div>
+                                        <div>
+                                            <img src="~/Assets/organization.png"
+                                                 alt=""
+                                                 class="px-2 pb-0" />Organization
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="d-flex">
+                                        <img src="~/Assets/selected-star.png" alt="" />
+                                        <img src="~/Assets/selected-star.png" alt="" />
+                                        <img src="~/Assets/selected-star.png" alt="" />
+                                        <img src="~/Assets/selected-star.png" alt="" />
+                                        <img src="~/Assets/selected-star.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-text pt-1">
+                                <h2 class="">Planting and activities</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Necessitatibus ut possimus inventore id ab fuga? Eum,
+                                    dolorum autem quisquam odit perferendis culpa, labore
+                                    asperiores doloribus iure vero ipsa aut sequi.
+                                </p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex justify-content-around flex-grow-1">
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <img src="~/Assets/Seats-left.png" alt="..." />
+                                        </div>
+                                        <div class="d-flex flex-column flex-grow-1 ms-3">
+                                            <div>90</div>
+                                            <div style="font-size: small">Seats Left</div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <img src="~/Assets/Seats-left.png" alt="..." />
+                                        </div>
+                                        <div class="d-flex flex-column flex-grow-1 ms-3">
+                                            <div>90</div>
+                                            <div style="font-size: small">Seats Left</div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <img src="~/Assets/Seats-left.png" alt="..." />
+                                        </div>
+                                        <div class="d-flex flex-column flex-grow-1 ms-3">
+                                            <div>90</div>
+                                            <div style="font-size: small">Seats Left</div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <img src="~/Assets/Seats-left.png" alt="..." />
+                                        </div>
+                                        <div class="d-flex flex-column flex-grow-1 ms-3">
+                                            <div>90</div>
+                                            <div style="font-size: small">Seats Left</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="d-flex justify-content-center">
+                                        <button class="rounded-pill shadow-sm border-0 bg-transparent p-2">
+                                            Apply <img src="~/Assets/right-arrow.png" alt="" />
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="row g-0">
+                    <div class="col-md-3">
+                        <div class="mission-image h-100">
+                            <img src="~/Assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png"
+                                 class="img-fluid h-100 w-100"
+                                 alt="..." />
+                            <div class="pin">
+                                <img src="~/Assets/pin.png" alt="" class="" />&nbsp; Toronto
+                            </div>
+                            <div class="favourite">
+                                <img src="~/Assets/heart.png" alt="" class="mw-50 mh-50" />
+                            </div>
+                            <div class="adduser">
+                                <img src="~/Assets/user.png" alt="" class="mw-50 mh-50" />
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <p class="card-title position-absolute" id="list-card">
+                                    Tree Plantation
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <div class="d-flex text-muted">
+                                        <div>
+                                            <img src="~/Assets/pin1.png"
+                                                 alt=""
+                                                 class="px-2 pb-0" />Toranto
+                                        </div>
+                                        <div>
+                                            <img src="~/Assets/web.png"
+                                                 alt=""
+                                                 class="px-2 pb-0" />Enviromental
+                                        </div>
+                                        <div>
+                                            <img src="~/Assets/organization.png"
+                                                 alt=""
+                                                 class="px-2 pb-0" />Organization
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="d-flex">
+                                        <img src="~/Assets/selected-star.png" alt="" />
+                                        <img src="~/Assets/selected-star.png" alt="" />
+                                        <img src="~/Assets/selected-star.png" alt="" />
+                                        <img src="~/Assets/selected-star.png" alt="" />
+                                        <img src="~/Assets/selected-star.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-text pt-1">
+                                <h2 class="">Planting and activities</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Necessitatibus ut possimus inventore id ab fuga? Eum,
+                                    dolorum autem quisquam odit perferendis culpa, labore
+                                    asperiores doloribus iure vero ipsa aut sequi.
+                                </p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex justify-content-around flex-grow-1">
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <img src="~/Assets/Seats-left.png" alt="..." />
+                                        </div>
+                                        <div class="d-flex flex-column flex-grow-1 ms-3">
+                                            <div>90</div>
+                                            <div style="font-size: small">Seats Left</div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <img src="~/Assets/Seats-left.png" alt="..." />
+                                        </div>
+                                        <div class="d-flex flex-column flex-grow-1 ms-3">
+                                            <div>90</div>
+                                            <div style="font-size: small">Seats Left</div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <img src="~/Assets/Seats-left.png" alt="..." />
+                                        </div>
+                                        <div class="d-flex flex-column flex-grow-1 ms-3">
+                                            <div>90</div>
+                                            <div style="font-size: small">Seats Left</div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <img src="~/Assets/Seats-left.png" alt="..." />
+                                        </div>
+                                        <div class="d-flex flex-column flex-grow-1 ms-3">
+                                            <div>90</div>
+                                            <div style="font-size: small">Seats Left</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="d-flex justify-content-center">
+                                        <button class="rounded-pill shadow-sm border-0 bg-transparent p-2">
+                                            Apply <img src="~/Assets/right-arrow.png" alt="" />
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="row g-0">
+                    <div class="col-md-3">
+                        <div class="mission-image h-100">
+                            <img src="~/Assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png"
+                                 class="img-fluid h-100 w-100"
+                                 alt="..." />
+                            <div class="pin">
+                                <img src="~/Assets/pin.png" alt="" class="" />&nbsp; Toronto
+                            </div>
+                            <div class="favourite">
+                                <img src="~/Assets/heart.png" alt="" class="mw-50 mh-50" />
+                            </div>
+                            <div class="adduser">
+                                <img src="~/Assets/user.png" alt="" class="mw-50 mh-50" />
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <p class="card-title position-absolute" id="list-card">
+                                    Tree Plantation
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <div class="d-flex text-muted">
+                                        <div>
+                                            <img src="~/Assets/pin1.png"
+                                                 alt=""
+                                                 class="px-2 pb-0" />Toranto
+                                        </div>
+                                        <div>
+                                            <img src="~/Assets/web.png"
+                                                 alt=""
+                                                 class="px-2 pb-0" />Enviromental
+                                        </div>
+                                        <div>
+                                            <img src="~/Assets/organization.png"
+                                                 alt=""
+                                                 class="px-2 pb-0" />Organization
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="d-flex">
+                                        <img src="~/Assets/selected-star.png" alt="" />
+                                        <img src="~/Assets/selected-star.png" alt="" />
+                                        <img src="~/Assets/selected-star.png" alt="" />
+                                        <img src="~/Assets/selected-star.png" alt="" />
+                                        <img src="~/Assets/selected-star.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-text pt-1">
+                                <h2 class="">Planting and activities</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Necessitatibus ut possimus inventore id ab fuga? Eum,
+                                    dolorum autem quisquam odit perferendis culpa, labore
+                                    asperiores doloribus iure vero ipsa aut sequi.
+                                </p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex justify-content-around flex-grow-1">
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <img src="~/Assets/Seats-left.png" alt="..." />
+                                        </div>
+                                        <div class="d-flex flex-column flex-grow-1 ms-3">
+                                            <div>90</div>
+                                            <div style="font-size: small">Seats Left</div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <img src="~/Assets/Seats-left.png" alt="..." />
+                                        </div>
+                                        <div class="d-flex flex-column flex-grow-1 ms-3">
+                                            <div>90</div>
+                                            <div style="font-size: small">Seats Left</div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <img src="~/Assets/Seats-left.png" alt="..." />
+                                        </div>
+                                        <div class="d-flex flex-column flex-grow-1 ms-3">
+                                            <div>90</div>
+                                            <div style="font-size: small">Seats Left</div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <img src="~/Assets/Seats-left.png" alt="..." />
+                                        </div>
+                                        <div class="d-flex flex-column flex-grow-1 ms-3">
+                                            <div>90</div>
+                                            <div style="font-size: small">Seats Left</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="d-flex justify-content-center">
+                                        <button class="rounded-pill shadow-sm border-0 bg-transparent p-2">
+                                            Apply <img src="~/Assets/right-arrow.png" alt="" />
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="row g-0">
+                    <div class="col-md-3">
+                        <div class="mission-image h-100">
+                            <img src="~/Assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png"
+                                 class="img-fluid h-100 w-100"
+                                 alt="..." />
+                            <div class="pin">
+                                <img src="~/Assets/pin.png" alt="" class="" />&nbsp; Toronto
+                            </div>
+                            <div class="favourite">
+                                <img src="~/Assets/heart.png" alt="" class="mw-50 mh-50" />
+                            </div>
+                            <div class="adduser">
+                                <img src="~/Assets/user.png" alt="" class="mw-50 mh-50" />
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <p class="card-title position-absolute" id="list-card">
+                                    Tree Plantation
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <div class="d-flex text-muted">
+                                        <div>
+                                            <img src="~/Assets/pin1.png"
+                                                 alt=""
+                                                 class="px-2 pb-0" />Toranto
+                                        </div>
+                                        <div>
+                                            <img src="~/Assets/web.png"
+                                                 alt=""
+                                                 class="px-2 pb-0" />Enviromental
+                                        </div>
+                                        <div>
+                                            <img src="~/Assets/organization.png"
+                                                 alt=""
+                                                 class="px-2 pb-0" />Organization
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="d-flex">
+                                        <img src="~/Assets/selected-star.png" alt="" />
+                                        <img src="~/Assets/selected-star.png" alt="" />
+                                        <img src="~/Assets/selected-star.png" alt="" />
+                                        <img src="~/Assets/selected-star.png" alt="" />
+                                        <img src="~/Assets/selected-star.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-text pt-1">
+                                <h2 class="">Planting and activities</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Necessitatibus ut possimus inventore id ab fuga? Eum,
+                                    dolorum autem quisquam odit perferendis culpa, labore
+                                    asperiores doloribus iure vero ipsa aut sequi.
+                                </p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex justify-content-around flex-grow-1">
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <img src="~/Assets/Seats-left.png" alt="..." />
+                                        </div>
+                                        <div class="d-flex flex-column flex-grow-1 ms-3">
+                                            <div>90</div>
+                                            <div style="font-size: small">Seats Left</div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <img src="~/Assets/Seats-left.png" alt="..." />
+                                        </div>
+                                        <div class="d-flex flex-column flex-grow-1 ms-3">
+                                            <div>90</div>
+                                            <div style="font-size: small">Seats Left</div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <img src="~/Assets/Seats-left.png" alt="..." />
+                                        </div>
+                                        <div class="d-flex flex-column flex-grow-1 ms-3">
+                                            <div>90</div>
+                                            <div style="font-size: small">Seats Left</div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <img src="~/Assets/Seats-left.png" alt="..." />
+                                        </div>
+                                        <div class="d-flex flex-column flex-grow-1 ms-3">
+                                            <div>90</div>
+                                            <div style="font-size: small">Seats Left</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="d-flex justify-content-center">
+                                        <button class="rounded-pill shadow-sm border-0 bg-transparent p-2">
+                                            Apply <img src="~/Assets/right-arrow.png" alt="" />
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    $(window).resize(function () {
+        if (document.body.clientWidth < 769) {
+            opengrid();
+        } else {
+        }
+    });
+    var checkboxes = document.querySelectorAll(".checkbox");
+
+    let filtersSection = document.querySelector(".filters-section");
+
+    var listArray = [];
+
+    var filterList = document.querySelector(".filter-list");
+
+    var len = listArray.length;
+
+    for (var checkbox of checkboxes) {
+        checkbox.addEventListener("click", function () {
+            if (this.checked == true) {
+                addElement(this, this.value);
+            } else {
+                removeElement(this.value);
+                // console.log("unchecked");
+            }
+        });
+    }
+
+    function addElement(current, value) {
+        let filtersSection = document.querySelector(".filters-section");
+
+        let createdTag = document.createElement("div");
+        createdTag.classList.add("d-flex");
+        createdTag.classList.add("filter-list");
+
+        createdTag.classList.add("ps-3");
+        createdTag.classList.add("pe-1");
+        createdTag.classList.add("me-2");
+        createdTag.innerHTML = value;
+
+        createdTag.setAttribute("id", value);
+        let crossButton = document.createElement("button");
+        crossButton.classList.add("filter-close-button");
+        let cross = "&times;";
+
+        crossButton.addEventListener("click", function () {
+            let elementToBeRemoved = document.getElementById(value);
+
+            console.log(elementToBeRemoved);
+            console.log(current);
+            elementToBeRemoved.remove();
+
+            current.checked = false;
+        });
+
+        crossButton.innerHTML = cross;
+
+        // let crossButton = '&times;'
+
+        createdTag.appendChild(crossButton);
+        filtersSection.appendChild(createdTag);
+    }
+
+    function removeElement(value) {
+        let filtersSection = document.querySelector(".filters-section");
+
+        let elementToBeRemoved = document.getElementById(value);
+        filtersSection.removeChild(elementToBeRemoved);
+    }
+    function opengrid() {
+        var x = document.getElementById("gridview");
+        var y = document.getElementById("listview");
+        if (x.style.display == "block") {
+            y.style.display = "none";
+        } else {
+            x.style.display = "block";
+            y.style.display = "none";
+        }
+    }
+    function openlist() {
+        var y = document.getElementById("gridview");
+        var x = document.getElementById("listview");
+        if (x.style.display == "block") {
+            y.style.display = "none";
+        } else {
+            x.style.display = "block";
+            y.style.display = "none";
+        }
+    }
+</script>
+<script src="/js/bootstrap.bundle.min.js"></script>
+</html>

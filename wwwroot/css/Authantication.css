@@ -1,0 +1,132 @@
+﻿.main {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0px;
+}
+
+.loginpage {
+    margin-left: 15px;
+    padding-left: 15px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.spacebetween {
+    margin-top: 50%;
+}
+
+.slideimg {
+    display: block;
+    width: 100%;
+    /* height: auto; */
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-label {
+    text-align: left;
+    letter-spacing: 0px;
+    color: #414141;
+    opacity: 1;
+}
+
+.img-heading {
+    text-align: left;
+}
+
+.img-discription {
+    text-align: left;
+}
+
+.login-btn {
+    width: 100%;
+    height: 48px;
+    background: #F8863400 0% 0% no-repeat padding-box;
+    border: 2px solid #F88634;
+    color: #F88634;
+    border-radius: 24px;
+}
+
+    .login-btn:hover {
+        background-color: #F88634;
+        color: white;
+    }
+
+.lostpass,
+.privacy {
+    text-align: center;
+    letter-spacing: 0px;
+    color: #414141;
+    opacity: 1;
+    text-decoration: none;
+    color: #414141;
+}
+
+.privacy {
+    text-align: center;
+    letter-spacing: 0px;
+    color: #414141;
+    opacity: 1;
+    text-decoration: none;
+    color: #414141;
+}
+
+.privacy-policy {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:991px) {
+    .loginpage {
+        padding-top: 100px;
+        margin-left: 20px;
+    }
+
+    .spacebetween {
+        margin-top: 0%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .img-heading {
+        font-size: 30px;
+    }
+
+    .img-discription {
+        font-size: 11px;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .img-heading {
+        font-size: 30px;
+        width: 70%;
+    }
+
+    .img-discription {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .img-heading {
+        font-size: 15px;
+        width: 70%;
+    }
+
+    .img-discription {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width:370px) {
+    .img-heading {
+        font-size: 15px;
+        width: 70%;
+    }
+
+    .img-discription {
+        display: none;
+    }
+}
