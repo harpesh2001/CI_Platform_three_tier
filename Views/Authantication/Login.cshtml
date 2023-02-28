@@ -1,11 +1,9 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@using CI_Platform_three_tier.DataModels.DataModels
+@model User
 @{
     ViewData["Title"] = "Login Page";
     Layout = null;
+    var modelStateMessage = ViewData["ModelState"];
 }
 
 <!DOCTYPE html>
@@ -150,26 +148,34 @@
                     <div class="text-center">
                         <img class="mw-100" src="/Assets/logo.png" alt="logo" />
                     </div>
+
+                    <form asp-route="LoginPost">
                     <!-- <form> -->
+                    @if(ViewBag.msg!= null)
+                    {
+                        <div class="alert alert-danger">User not found.</div>
+                    }
 
                     <div class="mb-3 form-input">
                         <label for="emailId" class="form-label">Email address</label>
                         <input type="email"
+                                asp-for="Email"
                                class="form-control"
                                id="emailId"
-                               placeholder="name@example.com" />
+                               placeholder="name@example.com" required/>
                     </div>
                     <div class="mb-3 form-input">
                         <label for="password" class="form-label">Password</label>
                         <input type="password"
+                            asp-for="Password"
                                class="form-control"
                                id="password"
-                               placeholder="****" />
+                               placeholder="****" required/>
                     </div>
                     <div class="mb-3 form-input">
                         <button type="submit" class="login-btn mb-4">login</button>
                     </div>
-
+                    </form>
                     <!-- </form> -->
                     <div class="text-center mb-3">
                         <a class="lostpass" asp-area="" asp-controller="Login" asp-action="ForgotPassword">Lost your Password?</a>
@@ -187,4 +193,11 @@
 </body>
 
 <script src="/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(document).ready(finction(){
+        if("@modelStateMessage" != ""){
+        alert("@modelStateMessage");
+    }
+            })
+</script>
 </html>
