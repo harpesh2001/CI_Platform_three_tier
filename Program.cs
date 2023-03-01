@@ -16,7 +16,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<PlatformDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<EmailSender>();
-
+builder.Services.AddSession();
 
 var app = builder.Build();
 
@@ -34,7 +34,7 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
-
+app.UseSession();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
