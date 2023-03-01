@@ -1,4 +1,5 @@
 using CI_Platform_three_tier.DataModels.DataModels;
+using CI_Platform_three_tier.Models;
 using CI_Platform_three_tier.Repository.Repository;
 using CI_Platform_three_tier.Repository.Repository.Interface;
 using Microsoft.EntityFrameworkCore;
@@ -14,6 +15,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<PlatformDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<EmailSender>();
 
 
 var app = builder.Build();

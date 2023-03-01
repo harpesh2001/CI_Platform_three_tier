@@ -1,4 +1,5 @@
 ﻿using CI_Platform_three_tier.DataModels.DataModels;
+using CI_Platform_three_tier.Models;
 using CI_Platform_three_tier.Repository.Repository.Interface;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -15,13 +16,15 @@ namespace CI_Platform_three_tier.Controllers
     {
 
         private readonly IUserRepository _userRepository;
-        private readonly ILogger<AuthanticationController> _logger; 
-
-        public AuthanticationController( ILogger<AuthanticationController> logger, IUserRepository userRepository )
+        private readonly ILogger<AuthanticationController> _logger;
+        private readonly EmailSender _emailSender;
+        private readonly PlatformDbContext _platformDbContext;
+        public AuthanticationController(ILogger<AuthanticationController> logger, IUserRepository userRepository, EmailSender emailSender)
         {
-            _logger= logger;    
-            _userRepository= userRepository;
-
+            _logger = logger;
+            _userRepository = userRepository;
+            _emailSender = emailSender;
+            _platformDbContext = new PlatformDbContext();
         }
 
 
@@ -83,9 +86,34 @@ namespace CI_Platform_three_tier.Controllers
 
 
         [HttpGet]
+        [Route("", Name = "ResetPassword")]
         public IActionResult ResetPassword() {
             return View();
         }
+
+
+        [HttpPost]
+        [Route("/Authantication/ResetPassword", Name = "ResetPasswordParameter")]
+        public IActionResult ResetPassword(User model)
+        {
+            string token = HttpContext.Session.GetString("token");
+            var validate = _platformDbContext.PasswordResets.Where(a => a.Token == token).FirstOrDefault();
+            if (validate == null)
+            {
+                var user1 = _platformDbContext.Users.FirstOrDefault(u => u.Email == validate.Email);
+                user1.Password = model.Password;
+                _platformDbContext.Update(user1);
+                _platformDbContext.SaveChanges();
+                TempData["Error"] = "PassWord changhed";
+                HttpContext.Session.Remove("token_session");
+            }
+            return View();
+        }
+
+
+
+
+
         [HttpGet]
         public IActionResult ForgotPassword() 
         {
@@ -93,21 +121,20 @@ namespace CI_Platform_three_tier.Controllers
         }
 
         [HttpPost]
-        [AllowAnonymous]
-        
-        public IActionResult ForgotPassword(User user)
-        {
-            var validity = _userRepository.VerifyUserAsync(user);
-            if (validity == 0)
-            {
-                ViewBag.msg = 0;
-            }
-            else
-            {
-                var otp = generateOtp();
+        [Route("/Authantication/ForgotPassword", Name = "SendEmail")]
 
+        public async Task<IActionResult> ForgotPasswordAsync(PasswordReset user)
+        {
+            var existance = _userRepository.CheckUserAsync(user.Email);
+            if (existance == 1)
+            {
+                var token = Guid.NewGuid().ToString();
+                _emailSender.SendEmail(user.Email, "Hear is your password reset link...", "https://localhost:7179/Authantication/ResetPassword?token=" + token + "&id=" + user.Email);
+                await _userRepository.AddToken(user, token);
+                HttpContext.Session.SetString("token", token);
             }
-            return View();
+
+            return RedirectToRoute("ResetPassword");
         }
 
         private string generateOtp()
